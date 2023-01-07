@@ -131,3 +131,5 @@ particlesJS('particles-js',
   }
 
 );
+exports.default=series(scsssTask,jsTask,browserSyncServe,watchTask);
+exports.built=series(scsssTask,jsTask);
